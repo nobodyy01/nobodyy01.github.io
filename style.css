@@ -61,27 +61,38 @@ body::after {
 }
 
 /* Header */
+/* Header -- UPDATED */
 header {
-    text-align: center;
+    position: relative; /* 1. Jadikan header sebagai acuan posisi */
+    text-align: center;   /* 2. Buat teks di dalamnya menjadi di tengah */
+    padding: 20px 0;      /* 3. Beri sedikit ruang vertikal */
     margin-bottom: 40px;
 }
 
+/* Logo Text -- UPDATED */
 .logo {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--dark-text);
-    display: inline-flex;
-    align-items: center;
+    /* Pastikan tidak ada properti yang mengganggu text-align center */
 }
 
-.logo span {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--dark-text);
-    background-color: var(--light-green);
-    padding: 4px 8px;
-    border-radius: 8px;
-    margin-left: 8px;
+/* BNI Logo Image -- UPDATED */
+.logo-bni-img {
+    position: absolute; /* 4. Keluarkan logo dari alur normal */
+    top: 4px;          /* 5. Posisikan 4px dari atas header */
+    left: 0;            /* 6. Posisikan di paling kiri */
+    height: 25px;       /* Atur ukuran sesuai selera */
+    width: auto;
+}
+
+/* Wondr Logo Image -- UPDATED */
+.logo-wondr-img {
+    position: absolute; /* 4. Keluarkan logo dari alur normal */
+    top: 0;          /* 5. Posisikan 0px dari atas header */
+    right: 0;            /* 6. Posisikan di paling kiri */
+    height: 35px;       /* Atur ukuran sesuai selera */
+    width: auto;
 }
 
 /* Title */
@@ -91,7 +102,7 @@ header {
 }
 
 .title-section h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-orange);
     margin-bottom: 8px;
@@ -199,4 +210,10 @@ header {
     margin: 4px 0;
     font-size: 0.85rem; /* Ukuran font lebih kecil */
     line-height: 1.5;
+}
+
+.logo img {
+    height: 1em; /* Menyesuaikan tinggi logo dengan ukuran font */
+    width: auto; /* Menjaga rasio aspek gambar agar tidak gepeng */
+    margin-right: 0.4em; /* Memberi sedikit jarak ke teks di kanannya */
 }
