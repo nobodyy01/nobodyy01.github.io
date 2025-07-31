@@ -183,3 +183,20 @@ header {
     height: 24px;
     stroke: #F97A39; /* Warna oranye */
 }
+
+/* === Gaya untuk Footer === */
+
+.site-footer {
+    width: 100%;
+    margin-top: 60px; /* Memberi jarak dari konten di atasnya */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Garis tipis sebagai pemisah */
+    color: #888; /* Warna teks yang lebih lembut */
+}
+
+.site-footer p {
+    margin: 4px 0;
+    font-size: 0.85rem; /* Ukuran font lebih kecil */
+    line-height: 1.5;
+}
